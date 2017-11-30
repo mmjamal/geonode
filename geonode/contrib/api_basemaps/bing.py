@@ -30,4 +30,7 @@ BASEMAP = {
     'visibility': False,
     'group': 'background'
 }
-settings.MAP_BASELAYERS.append(settings.BASEMAP)
+# Getting error when running python manage.py throwing no BASEMAP found from settings module
+# removing settings
+#settings.MAP_BASELAYERS.append(settings.BASEMAP)
+settings.MAP_BASELAYERS.append(BASEMAP)
